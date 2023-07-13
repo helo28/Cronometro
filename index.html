@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRONOMETRO</title>
+
+    <link rel="stylesheet" href="cronometro.css">
+</head>
+<body>
+    <div>
+        <h1>CRONOMETRO</h1>
+        <div class="box">
+            <span id="seg">00</span>:<span id="mseg">00</span> <!--SPAN DEIXA COLOCAR UMA FORMATAÇÃO TIPO NEGRITO-->
+        </div>
+        <button id="btnInicio">Iniciar</button>
+        <button id="btnParar">Parar</button>
+        <button id="btnZerar">Zerar</button>
+    </div>
+
+    <script src="cronometro.js"></script> <!--É MELHOR QUE ISSO ESTEJA EM BAIXO PORQUE O PROGRAMA
+    EXECULTA DE CIMA PARA BAIXO. NESSE CASO AQUI ESSE JS PRECISA SER LIDO DEPOIS DO QUE ESTÁ NO HTML
+    POR ISSO ELE VAI EM BAIXO -->
+
+</body>
+</html>

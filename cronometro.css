@@ -1,0 +1,61 @@
+*{ /*RESETAR CONFIGURAÇÕES GERAIS DA TELA*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*MOLDAR TODOS OS ELEMENTOS EM FORMA BOX*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em; /*TAMANHO DA FONTE*/
+    background: #0276ad;
+    color: #fff; /*COR DAS LETRAS*/
+    display: flex; /*FORMATAR A CAIXA PARA FICAR LIVRE NA TELA A CAIXA TEM O TAMANHO DO ELEMENTO DENTRO DELA*/
+    align-items: center; /*ALINHAMENTO VERTICAL NA TELA*/
+    justify-content: center; /*ALINHAMENTO HORIZONTAL NA TELA*/
+    min-height: 100vh; /*TAMANHO MÍNIMO DA TELA, OCUPARÁ 100% DA VISUALIZAÇÃO*/
+    text-align: center; /*CENTRALIZAÇÃO DO TEXTO*/
+}
+
+h1{
+    font-size: 70px; /*TAMANHO DA FONTE DO TITULO*/
+    letter-spacing: 5px; /*ESPAÇO ENTRE AS LETRAS*/
+    padding: 30px; /*ESPAÇAMENTO INTERNO DO COMPONENTE*/
+    background: #024c6f;
+    border-radius: 20px; /*ARREDONDAMENTO DOS CANTOS*/
+    font-weight: 700; /*NEGRITO*/
+    margin: 0 auto 30px; /*MARGIN SUPERIOR É O 0, DIREITA E ESQUERDA É O AUTO E O 30PX É O INFERIOR*/
+}
+
+.box{ /* PARA CLASSE SE USA O .(PONTO)*/
+    width: 400px; /*LARGURA*/
+    text-align: center; /*ALINHANDO NO CENTRO*/ 
+    padding: 30px; /*ESPAÇAMENTO INTERNO*/
+    background: #024c6f;
+    font-size: 100px;
+    border-radius: 20px;
+    margin: 0 auto 30px;
+}
+
+button{
+    border: 0; /*RETIRA A BORDA*/
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #024c6f;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase; /*TRANSFORMA O TEXTO EM ALGO. NESSE CASO AQUI ESTÁ DEIXANDO EM MAIUSCULO(UPPER)*/
+    margin: 0 5px;
+}
+
+/*DEIXANDO O BOTÃO DE COR DIFERENTE AO PASSAR O MOUSE POR CIMA*/
+button:hover{ /*EFEITO DE PASSAR O MOUSE SOBRE O ELEMENTO*/
+    background: #0da1e8;
+    color: #024c6f;
+    transition: 0.5s ease; /*EASE É PARA SER DE LEVE*/
+}
+
+/*FOCUS É O QUE DEIXA O BOTÃO DIFERENTE AO CLICAR NELE */
+button:focus{
+    background: red;
+    color: #fff;
+}
